@@ -1,0 +1,19 @@
+{
+  "name": "cypress_practise123",
+  "version": "1.0.0",
+  "description": "Basics of Cypress and java scipt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cypress",
+    "visit",
+    "request"
+  ],
+  "author": "VB",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
