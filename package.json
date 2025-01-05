@@ -14,6 +14,8 @@
   "author": "VB",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.17.0",
+    "cypress-xpath": "^2.0.1"
   }
 }

@@ -12,4 +12,5 @@ describe('Verify Login', () => { //test Scenarios
         cy.log("Valid credentials - 3")
     })
 
+
 })
