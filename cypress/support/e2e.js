@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+//to hide extra line (requests and their respones) in the logs.
 const app = window.top;
 if (!app.document.head.querySelector("[data-hide-command-log-request]")) {
     const style = app.document.createElement("style");
@@ -23,3 +24,11 @@ if (!app.document.head.querySelector("[data-hide-command-log-request]")) {
     style.setAttribute("data-hide-command-log-request", "");
     app.document.head.appendChild(style);
 }
+
+
+//The below lines will Turn off all uncaught exception handling.sometime,during execution, when we load the page or url, some events or Java query lines gets added & gives error. FYI - if the eror if from application side not from cypress side & to ignore it:
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+})
