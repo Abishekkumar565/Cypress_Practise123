@@ -5,7 +5,7 @@ module.exports = defineConfig({
   watchForFileChanges: false,
   //pageLoadTimeout : 60000,
   viewportHeight: 667,
-  viewportHeight: 375,
+  viewportWidth: 375,
 
   e2e: {
 

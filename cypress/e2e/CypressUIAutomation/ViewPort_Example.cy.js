@@ -18,7 +18,7 @@ describe("ViewPort_Example01", () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     })
 
-    it("This is taking values from config file", () => {
+    it.only("This is taking values from config file", () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     })
 

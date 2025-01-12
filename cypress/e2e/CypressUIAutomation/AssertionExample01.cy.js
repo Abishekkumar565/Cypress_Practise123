@@ -15,7 +15,7 @@ describe('Assertion_Examples', () => {
         //Negative Assertion statements applied on webelement -
         cy.xpath("//div[text()='Swag Labs']").should('not.contain.text', 'SwagLabs2');
         cy.xpath("//div[text()='Swag Labs']").should('not.contain', 'SwagLabs');
-        //cy.xpath("//div[text()='Swag Labs']").should('eq', 'Swag Labs');
+        //cy.xpath("//div[text()='Swag Labs']").should('eq', 'Swag Labs'); // can't use for comparing text
     })
 
 })

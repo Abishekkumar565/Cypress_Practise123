@@ -16,11 +16,13 @@ describe('FixtureTest_Example01', () => {
             cy.xpath("//span[.='PIM']").click();
         })
     })
+
     it('TC2_Repeat_taking data from fixture file', () => {
         cy.log("Validating varible...");
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         cy.get("input[name ='username']").type(username1);
         cy.xpath("//input[@name='password']").type(password1);
+        cy.pause();
         cy.xpath("//button[text()=' Login ']").click();
         cy.xpath("//span[.='PIM']").click();
     })

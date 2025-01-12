@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync")();
 
+
 function factorialOfANumber(num) {
     if (num == 0) {
         return 1;
